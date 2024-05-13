@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
 }
@@ -8,10 +12,18 @@ input {
 
 .main {
   padding-top: 64px;
-  
+
+  & + .footer {
+    margin-top: 100px;
+  }
+
   &.index {
     padding: 0;
   }
+}
+
+.main.index + .footer {
+  margin-top: 0;
 }
 
 .icon {

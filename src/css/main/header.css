@@ -96,7 +96,7 @@
 
 /*  */
 
-svg {
+.burger svg {
   width: 40px;
 }
 
@@ -107,7 +107,7 @@ svg {
   transform-origin: center;
 }
 
-svg.active {
+.burger svg.active {
   #top-line {
     animation: down-rotate 0.6s ease-out both;
   }
