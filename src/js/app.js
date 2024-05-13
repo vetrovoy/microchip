@@ -1,3 +1,8 @@
 import '../css/app.css';
 
-console.log(1);
+const burger = document.querySelector("#hamburger");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  // document.querySelector(".menu").classList.toggle("menu--active");
+})

@@ -1,48 +1,46 @@
 .button {
   cursor: pointer;
-  text-transform: uppercase;
-  padding: 12px 32px;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 1px;
+  padding: 0 21px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
   text-align: center;
-  background-color: $color-white;
-  border: 1px solid $color-secondary;
-  color: $color-secondary;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: $color-accent-blue;
+  border: 1px solid $color-accent-blue;
+  color: $color-white;
+  transition: opacity 0.2s ease-in-out;
 
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 1px $color-white;
+  &:hover {
+    opacity: 0.7;
   }
 
-  &:active {
-    transform: scale(0.99);
+  &--accent-blue {
+    background-color: $color-accent-blue;
+    border: 1px solid $color-accent-blue;
+    color: $color-primary;
   }
 
-  &--secondary {
-    background-color: $color-secondary;
-    border: 1px solid $color-secondary;
+  &--accent-dark-blue {
+    background-color: $color-accent-dark-blue;
+    border: 1px solid $color-accent-dark-blue;
     color: $color-white;
   }
 
-  &--accent {
-    background-color: $color-accent;
-    border: 1px solid $color-accent;
-    color: $color-white;
-  }
-
-  &--white {
-    background-color: $color-white;
-    border: 1px solid $color-white;
-    color: $color-accent;
-  }
-
-  &--transparent {
+  &--disabled {
     background-color: transparent;
-    border: 1px solid $color-white;
-    color: $color-white;
+    border: 1px solid $color-secondary-light-grey;
+    color: $color-secondary-light-grey;
+  }
+
+  &--sm {
+    padding: 0 21px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 }

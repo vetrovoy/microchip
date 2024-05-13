@@ -1,13 +1,25 @@
 :root {
-  --color-primary: #151515;
-  --color-secondary: #00b5e2;
-  --color-accent: #003c71;
+  --color-primary: #282828;
+  --color-secondary: #898989;
+  --color-secondary-light-grey: rgba(40, 40, 40, 0.1);
+  --color-secondary-middle-grey: rgba(40, 40, 40, 0.3);
+
   --color-white: #ffffff;
-  --color-white-secondary: #F4F4F4;
+
+  --gradient: linear-gradient(90deg, #002b75 0%, #0075f8 100%);
+
+  --color-accent-blue: #0075f8;
+  --color-accent-dark-blue: #002b75;
 }
 
 $color-primary: var(--color-primary);
 $color-secondary: var(--color-secondary);
-$color-accent: var(--color-accent);
+$color-secondary-light-grey: var(--color-secondary-light-grey);
+$color-secondary-middle-grey: var(--color-secondary-middle-grey);
+
 $color-white: var(--color-white);
-$color-white-secondary: var(--color-white-secondary);
+
+$gradient: var(--gradient);
+
+$color-accent-blue: var(--color-accent-blue);
+$color-accent-dark-blue: var(--color-accent-dark-blue);

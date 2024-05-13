@@ -1,66 +1,137 @@
 body {
-  font-family: "Muller";
+  font-size: 16px;
+  font-family: Onest, sans-serif;
+  color: $color-primary;
 }
 
-a {
-  text-decoration: none;
-  color: $color-primary;
-  transition: color 0.2s ease-in-out;
-
-  &:hover {
-    color: $color-secondary;
+@media screen and (max-width: 1230px) {
+  body {
+    font-size: 14px;
   }
 }
 
-p {
-  color: #151515;
-  font-size: 18px;
+/* @media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+} */
+
+a,
+.link {
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  line-height: 150%;
+  cursor: pointer;
+  text-decoration: none;
+  color: $color-accent-blue;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-accent-dark-blue;
+  }
+}
+
+p,
+.paragraph {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-top: 0px;
+
+  &--lg {
+    font-size: 1.25em;
+  }
+
+  & span {
+    color: $color-accent-blue;
+  }
+}
+.paragraph {
+  margin-bottom: 0;
+}
+
+small {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding-left: 1.3em;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-left: 1.3rem;
+  margin: 0;
 }
 
 li {
-  color: #151515;
-  font-family: Muller;
-  font-size: 18px;
+  font-size: 1em;
+  font-style: normal;
   font-weight: 400;
-  line-height: 1;
+  line-height: 150%;
+  color: $color-secondary;
 
   &::marker {
-    color: $color-accent;
-    font-size: 1.3em;
+    color: $color-accent-blue;
+    font-size: 1.3rem;
   }
 }
 
 .title {
-  font-size: 46px;
+  display: inline-block;
   font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  margin-top: 0;
-  margin-bottom: 40px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-top: 0px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
+  &--max {
+    font-size: 54px;
+
+    @media (max-width: 1230px) {
+      font-size: 41px;
+    }
+  }
 
   &--1 {
-    font-size: 52px;
+    font-size: 41px;
+    @media (max-width: 1230px) {
+      font-size: 30px;
+    }
   }
 
   &--2 {
-    font-size: 46px;
+    font-size: 30px;
+    @media (max-width: 1230px) {
+      font-size: 23px;
+    }
   }
 
   &--3 {
-    font-size: 40px;
+    font-size: 23px; /* 23px */
+    @media (max-width: 1230px) {
+      font-size: 17px;
+    }
+  }
+
+  &--4 {
+    font-size: 17px; /* 17px */
+  }
+
+  & span {
+    color: $color-accent-blue;
+  }
+}
+
+.heading {
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 45px;
   }
 }

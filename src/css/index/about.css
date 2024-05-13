@@ -1,0 +1,31 @@
+.about-min {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & .paragraph--lg {
+    margin-bottom: 15px;
+  }
+
+  &__left {
+    max-width: 750px;
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__right {
+    max-width: 400px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}

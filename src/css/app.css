@@ -5,6 +5,7 @@
 /* Base */
 @import "base/normalize.css";
 @import "base/fonts.css";
+@import "base/base.css";
 @import "base/typography.css";
 @import "base/utilities.css";
 /* /Base */
@@ -15,7 +16,17 @@
 @import "components/containers.css";
 /* /Components */
 
-/* Layout */
-@import "layout/header.css";
-@import "layout/footer.css";
-/* /Layout */
+/* Main */
+@import "main/header.css";
+@import "main/footer.css";
+/* /Main */
+
+/* Index */
+@import "index/hero.css";
+@import "index/advantages.css";
+@import "index/about.css";
+/* /Index */
+
+/* Catalog */
+@import "catalog/catalog.css";
+/* /Catalog */
