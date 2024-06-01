@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <include
+      custom-src="include/main/header.html"
+      src="include/main/header.html"
+    ></include>
+    <main class="main">
+      <div class="cart screen">
+        <div class="container">
+          <h1 class="catalog__title title title--2">Корзина</h1>
+        </div>
+
+        <div class="container">
+          <div class="cart__container">
+            <div class="cart__actions">
+              <div class="cart__actions-left">
+                <button class="icon cart__download">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_85_12359)">
+                      <path
+                        d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z"
+                        fill="#002B75"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_85_12359">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button class="icon cart__edit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_85_12360)">
+                      <path
+                        d="M3 17.2501V21.0001H6.75L17.81 9.94006L14.06 6.19006L3 17.2501ZM20.71 7.04006C21.1 6.65006 21.1 6.02006 20.71 5.63006L18.37 3.29006C17.98 2.90006 17.35 2.90006 16.96 3.29006L15.13 5.12006L18.88 8.87006L20.71 7.04006Z"
+                        fill="#002B75"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_85_12360">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <div class="cart__actions-right">
+                <button class="icon cart__refresh">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_85_12363)">
+                      <path
+                        d="M15.55 5.55L11 1V4.07C7.06 4.56 4 7.92 4 12C4 16.08 7.05 19.44 11 19.93V17.91C8.16 17.43 6 14.97 6 12C6 9.03 8.16 6.57 11 6.09V10L15.55 5.55ZM19.93 11C19.76 9.61 19.21 8.27 18.31 7.11L16.89 8.53C17.43 9.28 17.77 10.13 17.91 11H19.93ZM13 17.9V19.92C14.39 19.75 15.74 19.21 16.9 18.31L15.46 16.87C14.71 17.41 13.87 17.76 13 17.9ZM16.89 15.48L18.31 16.89C19.21 15.73 19.76 14.39 19.93 13H17.91C17.77 13.87 17.43 14.72 16.89 15.48Z"
+                        fill="#002B75"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_85_12363">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button class="icon cart__clear">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_85_12366)">
+                      <path
+                        d="M19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4ZM6 7V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6ZM14 14H10H16H14Z"
+                        fill="#002B75"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_85_12366">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button class="icon cart__cancel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="26"
+                    viewBox="0 0 24 26"
+                    fill="none"
+                  >
+                    <mask
+                      id="mask0_85_12369"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="1"
+                      width="24"
+                      height="24"
+                    >
+                      <path d="M24 1H0V25H24V1Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_85_12369)">
+                      <path
+                        d="M12 3C6.47 3 2 7.47 2 13C2 18.53 6.47 23 12 23C17.53 23 22 18.53 22 13C22 7.47 17.53 3 12 3ZM17 16.59L15.59 18L12 14.41L8.41 18L7 16.59L10.59 13L7 9.41L8.41 8L12 11.59L15.59 8L17 9.41L13.41 13L17 16.59Z"
+                        fill="#002B75"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="catalog-section">
+              <div class="catalog-section-header">
+                <div class="catalog-section-header__item">Наименование</div>
+                <div class="catalog-section-header__item">Бренд</div>
+                <div class="catalog-section-header__item">Доступно</div>
+                <div class="catalog-section-header__item">Кратность</div>
+                <div class="catalog-section-header__item">min</div>
+                <div class="catalog-section-header__item">Норма уп.</div>
+                <div class="catalog-section-header__item">Цена USD</div>
+                <div class="catalog-section-header__item">Сумма USD</div>
+                <div class="catalog-section-header__item">Срок</div>
+                <div class="catalog-section-header__item">Количество</div>
+              </div>
+
+              <div class="catalog-section-body">
+                <div class="catalog-section-body-item">
+                  <div class="catalog-section-body-item__title">
+                    <div class="catalog-section-body-item__heading">
+                      Наименование
+                    </div>
+                    10TPC100MT (DC:2131)
+                  </div>
+                  <div class="catalog-section-body-item__brand">
+                    <div class="catalog-section-body-item__heading">Бренд</div>
+                    PAN
+                  </div>
+                  <div class="catalog-section-body-item__brand">
+                    <div class="catalog-section-body-item__heading">
+                      Доступно
+                    </div>
+                    1631
+                  </div>
+                  <div class="catalog-section-body-item__quantity">
+                    <div class="catalog-section-body-item__heading">
+                      Кратность
+                    </div>
+                    1
+                  </div>
+                  <div class="catalog-section-body-item__min">
+                    <div class="catalog-section-body-item__heading">min</div>
+                    1
+                  </div>
+                  <div class="catalog-section-body-item__norm">
+                    <div class="catalog-section-body-item__heading">
+                      Норма уп.
+                    </div>
+                    3000
+                  </div>
+                  <div class="catalog-section-body-item__price">
+                    <div class="catalog-section-body-item__heading">
+                      Цена USD
+                    </div>
+                    0,9320 <br />
+                    0,8855 <br />
+                    0,7768 <br />
+                    0,7379 <br />
+                    0,7146
+                  </div>
+                  <div class="catalog-section-body-item__sum">
+                    <div class="catalog-section-body-item__heading">
+                      Сумма USD
+                    </div>
+                    x1 = 0,9320 <br />
+                    x14 = 12,3967 <br />
+                    x78 = 60,5873 <br />
+                    x326 = 240,5489 <br />
+                    x840 = 600,2640
+                  </div>
+                  <div class="catalog-section-body-item__term">
+                    <div class="catalog-section-body-item__heading">Срок</div>
+                    1 неделя
+                  </div>
+                  <div class="catalog-section-body-item__amount">
+                    <div class="catalog-section-body-item__heading">
+                      Количество
+                    </div>
+                    <div class="icon">
+                      <input disabled type="number" class="input" value="1" />
+                      <button class="button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.5625 19.25C8.32189 19.25 8.9375 18.6344 8.9375 17.875C8.9375 17.1156 8.32189 16.5 7.5625 16.5C6.80311 16.5 6.1875 17.1156 6.1875 17.875C6.1875 18.6344 6.80311 19.25 7.5625 19.25Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M17.1875 19.25C17.9469 19.25 18.5625 18.6344 18.5625 17.875C18.5625 17.1156 17.9469 16.5 17.1875 16.5C16.4281 16.5 15.8125 17.1156 15.8125 17.875C15.8125 18.6344 16.4281 19.25 17.1875 19.25Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.6281 5.18977C19.5315 5.07162 19.4099 4.97647 19.2719 4.91121C19.134 4.84596 18.9832 4.81224 18.8306 4.8125H5.75309L5.48969 3.31805C5.4616 3.15886 5.37832 3.01466 5.25448 2.91078C5.13063 2.80689 4.97415 2.74997 4.8125 2.75H2.0625C1.88016 2.75 1.7053 2.82243 1.57636 2.95136C1.44743 3.0803 1.375 3.25516 1.375 3.4375C1.375 3.61984 1.44743 3.7947 1.57636 3.92364C1.7053 4.05257 1.88016 4.125 2.0625 4.125H4.23586L6.19781 15.2445C6.2259 15.4036 6.30918 15.5478 6.43302 15.6517C6.55687 15.7556 6.71335 15.8125 6.875 15.8125H17.875C18.0573 15.8125 18.2322 15.7401 18.3611 15.6111C18.4901 15.4822 18.5625 15.3073 18.5625 15.125C18.5625 14.9427 18.4901 14.7678 18.3611 14.6389C18.2322 14.5099 18.0573 14.4375 17.875 14.4375H7.45164L7.2093 13.0625H17.5931C17.8315 13.0622 18.0625 12.9795 18.247 12.8285C18.4315 12.6774 18.5581 12.4673 18.6055 12.2336L19.843 6.04613C19.8728 5.89639 19.869 5.74189 19.8318 5.59379C19.7947 5.4457 19.7251 5.3077 19.6281 5.18977Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-section-body-item">
+                  <div class="catalog-section-body-item__title">
+                    <div class="catalog-section-body-item__heading">
+                      Наименование
+                    </div>
+                    10TPC100MT (DC:2131)
+                  </div>
+                  <div class="catalog-section-body-item__brand">
+                    <div class="catalog-section-body-item__heading">Бренд</div>
+                    PAN
+                  </div>
+                  <div class="catalog-section-body-item__brand">
+                    <div class="catalog-section-body-item__heading">
+                      Доступно
+                    </div>
+                    1631
+                  </div>
+                  <div class="catalog-section-body-item__quantity">
+                    <div class="catalog-section-body-item__heading">
+                      Кратность
+                    </div>
+                    1
+                  </div>
+                  <div class="catalog-section-body-item__min">
+                    <div class="catalog-section-body-item__heading">min</div>
+                    1
+                  </div>
+                  <div class="catalog-section-body-item__norm">
+                    <div class="catalog-section-body-item__heading">
+                      Норма уп.
+                    </div>
+                    3000
+                  </div>
+                  <div class="catalog-section-body-item__price">
+                    <div class="catalog-section-body-item__heading">
+                      Цена USD
+                    </div>
+                    0,9320 <br />
+                    0,8855 <br />
+                    0,7768 <br />
+                    0,7379 <br />
+                    0,7146
+                  </div>
+                  <div class="catalog-section-body-item__sum">
+                    <div class="catalog-section-body-item__heading">
+                      Сумма USD
+                    </div>
+                    x1 = 0,9320 <br />
+                    x14 = 12,3967 <br />
+                    x78 = 60,5873 <br />
+                    x326 = 240,5489 <br />
+                    x840 = 600,2640
+                  </div>
+                  <div class="catalog-section-body-item__term">
+                    <div class="catalog-section-body-item__heading">Срок</div>
+                    1 неделя
+                  </div>
+                  <div class="active catalog-section-body-item__amount">
+                    <div class="catalog-section-body-item__heading">
+                      Количество
+                    </div>
+                    <div class="icon">
+                      <input disabled type="number" class="input" value="1" />
+                      <button class="button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.5625 19.25C8.32189 19.25 8.9375 18.6344 8.9375 17.875C8.9375 17.1156 8.32189 16.5 7.5625 16.5C6.80311 16.5 6.1875 17.1156 6.1875 17.875C6.1875 18.6344 6.80311 19.25 7.5625 19.25Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M17.1875 19.25C17.9469 19.25 18.5625 18.6344 18.5625 17.875C18.5625 17.1156 17.9469 16.5 17.1875 16.5C16.4281 16.5 15.8125 17.1156 15.8125 17.875C15.8125 18.6344 16.4281 19.25 17.1875 19.25Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.6281 5.18977C19.5315 5.07162 19.4099 4.97647 19.2719 4.91121C19.134 4.84596 18.9832 4.81224 18.8306 4.8125H5.75309L5.48969 3.31805C5.4616 3.15886 5.37832 3.01466 5.25448 2.91078C5.13063 2.80689 4.97415 2.74997 4.8125 2.75H2.0625C1.88016 2.75 1.7053 2.82243 1.57636 2.95136C1.44743 3.0803 1.375 3.25516 1.375 3.4375C1.375 3.61984 1.44743 3.7947 1.57636 3.92364C1.7053 4.05257 1.88016 4.125 2.0625 4.125H4.23586L6.19781 15.2445C6.2259 15.4036 6.30918 15.5478 6.43302 15.6517C6.55687 15.7556 6.71335 15.8125 6.875 15.8125H17.875C18.0573 15.8125 18.2322 15.7401 18.3611 15.6111C18.4901 15.4822 18.5625 15.3073 18.5625 15.125C18.5625 14.9427 18.4901 14.7678 18.3611 14.6389C18.2322 14.5099 18.0573 14.4375 17.875 14.4375H7.45164L7.2093 13.0625H17.5931C17.8315 13.0622 18.0625 12.9795 18.247 12.8285C18.4315 12.6774 18.5581 12.4673 18.6055 12.2336L19.843 6.04613C19.8728 5.89639 19.869 5.74189 19.8318 5.59379C19.7947 5.4457 19.7251 5.3077 19.6281 5.18977Z"
+                            fill="white"
+                          />
+                        </svg>
+                        1
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-section-header">
+              <div class="cart__total">
+                <div class="cart__total-title">Итого:</div>
+                <div class="cart__total-price">1,2834 USD</div>
+              </div>
+            </div>
+
+            <div class="cart__done">
+              <button class="button">1,2834 USD. Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <include
+      custom-src="include/main/footer.html"
+      src="include/main/footer.html"
+    ></include>
+  </body>
+</html>

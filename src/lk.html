@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <include
+      custom-src="include/main/header.html"
+      src="include/main/header.html"
+    ></include>
+    <main class="main">
+      <div class="lk screen">
+        <div class="container">
+          <h1 class="catalog__title title title--2">Личный кабинет</h1>
+        </div>
+
+        <div class="container">
+          <div class="lk__container">
+            <div class="lk__tabs">
+              <div class="tabs">
+                <button class="tab active">Профиль</button>
+                <button class="tab">Заказы</button>
+                <button class="tab">Отгрузки</button>
+                <button class="tab">Реквизиты и средства</button>
+                <button class="tab">Уведомления</button>
+              </div>
+            </div>
+            <form action="" class="lk-form">
+              <div class="lk-form__heading">
+                <span class="paragraph paragraph--lg">Компания</span>
+              </div>
+
+              <div class="lk-form__row">
+                <div class="form-group form-group--col">
+                  <label for="company-name" class="form-label"
+                    >Название компании</label
+                  >
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="company-name"
+                    id="company-name"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="company-inn" class="form-label">ИНН</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="company-inn"
+                    id="company-inn"
+                  />
+                </div>
+              </div>
+
+              <div class="lk-form__heading">
+                <div class="paragraph paragraph--lg">Контактные данные</div>
+                <span class="paragraph"
+                  >Указывайте реальные данные. У вас могут попросить паспорт,
+                  прежде чем вручить оплаченный заказ.</span
+                >
+              </div>
+
+              <div class="lk-form__row">
+                <div class="form-group form-group--col">
+                  <label for="last-name" class="form-label">Фамилия</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="name" class="form-label">Имя</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="surname" class="form-label"
+                    >Отчество (при наличии)</label
+                  >
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="surname"
+                    id="surname"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="email" class="form-label"
+                    >Электронная почта</label
+                  >
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="tel" class="form-label">Номер телефона</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="tel"
+                    id="tel"
+                  />
+                </div>
+              </div>
+
+              <div class="lk-form__heading">
+                <span class="paragraph paragraph--lg"
+                  >Адрес для курьерской доставки</span
+                >
+              </div>
+
+              <div class="lk-form__row">
+                <div class="form-group form-group--col">
+                  <label for="city" class="form-label">Город</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="city"
+                    id="city"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="street" class="form-label">Улица</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="street"
+                    id="street"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="house" class="form-label">Дом</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="house"
+                    id="house"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="flat" class="form-label">Квартира/офис</label>
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="flat"
+                    id="flat"
+                  />
+                </div>
+
+                <div class="form-group form-group--col">
+                  <label for="postal-code" class="form-label"
+                    >Почтовый индекс</label
+                  >
+                  <input
+                    class="input input--secondary"
+                    type="text"
+                    name="postal-code"
+                    id="postal-code"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="button">Сохранить изменения</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <include
+      custom-src="include/main/footer.html"
+      src="include/main/footer.html"
+    ></include>
+  </body>
+</html>

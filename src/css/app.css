@@ -30,3 +30,15 @@
 /* Catalog */
 @import "catalog/catalog.css";
 /* /Catalog */
+
+/* Cart */
+@import "cart/cart.css";
+/* /Cart */
+
+/* Lk */
+@import "lk/lk.css";
+/* /Lk */
+
+/* Lk */
+@import "delivery/delivery.css";
+/* /Lk */

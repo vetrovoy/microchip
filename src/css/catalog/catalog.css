@@ -4,22 +4,6 @@
     font-weight: 500;
   }
 
-  &__search {
-    padding: 10px 0;
-    border: 0.5px solid $color-secondary-light-grey;
-    margin-bottom: 32px;
-
-    & .search {
-      max-width: 588px;
-      width: 100%;
-      margin-inline: auto;
-
-      @media (max-width: 768px) {
-        max-width: 100%;
-      }
-    }
-  }
-
   &--nothing {
     & .catalog__container {
       align-items: center;
@@ -176,7 +160,11 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
+    flex-grow: 1;
   }
 }
 
@@ -219,6 +207,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-grow: 1;
   }
 
   &__amount {
