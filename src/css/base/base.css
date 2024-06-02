@@ -123,7 +123,7 @@ button.icon {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 36px;
-  gap: 0 5px;
+  gap: 5px 0px;
 
   & .button {
     display: flex;
